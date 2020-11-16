@@ -22,7 +22,7 @@ router.get("/", (req, res) => {
             // Loop through query snapshot and push into array
             querySnapshot.forEach(doc => {
                 blogpostsArray.push(doc.data())
-            })
+            });
             // return array
             return res.send(blogpostsArray);
         })
